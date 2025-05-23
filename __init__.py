@@ -4,11 +4,11 @@ from .nodes.mask_coverage_analysis import *
 from .nodes.highlight_index_selector import *
 
 NODE_CONFIG = {
-    "AllBlackMaskValidator": {"class": AllBlackMaskValidator, "name": "All Black Mask Validator"},
-    "StringSplit": {"class": StringSplit, "name": "String Split"},
-    "StringStrip": {"class": StringStrip, "name": "String Strip"},
-    "MaskCoverageAnalysis": {"class": MaskCoverageAnalysis, "name": "Mask Coverage Analysis"},
-    "HighlightIndexSelector": {"class": HighlightIndexSelector, "name": "Highlight Index Selector"},
+    "AllBlackMaskValidator": {"class": AllBlackMaskValidator, "name": "NVVS All Black Mask Validator"},
+    "StringSplit": {"class": StringSplit, "name": "NVVS String Split"},
+    "StringStrip": {"class": StringStrip, "name": "NVVS String Strip"},
+    "MaskCoverageAnalysis": {"class": MaskCoverageAnalysis, "name": "NVVS Mask Coverage Analysis"},
+    "HighlightIndexSelector": {"class": HighlightIndexSelector, "name": "NVVS Highlight Index Selector"},
 }
 # "": {"class": , "name": ""},
 
