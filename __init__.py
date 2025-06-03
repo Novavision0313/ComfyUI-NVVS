@@ -2,6 +2,9 @@ from .nodes.all_black_mask_validator import *
 from .nodes.string_preprocessing import *
 from .nodes.mask_coverage_analysis import *
 from .nodes.highlight_index_selector import *
+from .nodes.full_body_detection import *
+from server import PromptServer
+from aiohttp import web
 
 NODE_CONFIG = {
     "AllBlackMaskValidator": {"class": AllBlackMaskValidator, "name": "NVVS All Black Mask Validator"},
@@ -9,6 +12,7 @@ NODE_CONFIG = {
     "StringStrip": {"class": StringStrip, "name": "NVVS String Strip"},
     "MaskCoverageAnalysis": {"class": MaskCoverageAnalysis, "name": "NVVS Mask Coverage Analysis"},
     "HighlightIndexSelector": {"class": HighlightIndexSelector, "name": "NVVS Highlight Index Selector"},
+    "FullBodyDetection": {"class": FullBodyDetection, "name": "NVVS Full Body Detection"},
 }
 # "": {"class": , "name": ""},
 
