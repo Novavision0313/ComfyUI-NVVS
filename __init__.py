@@ -3,6 +3,7 @@ from .nodes.string_preprocessing import *
 from .nodes.mask_coverage_analysis import *
 from .nodes.highlight_index_selector import *
 from .nodes.full_body_detection import *
+from .nodes.light_directionSelector import *
 from server import PromptServer
 from aiohttp import web
 
@@ -13,6 +14,7 @@ NODE_CONFIG = {
     "MaskCoverageAnalysis": {"class": MaskCoverageAnalysis, "name": "NVVS Mask Coverage Analysis"},
     "HighlightIndexSelector": {"class": HighlightIndexSelector, "name": "NVVS Highlight Index Selector"},
     "FullBodyDetection": {"class": FullBodyDetection, "name": "NVVS Full Body Detection"},
+    "DirectionSelector": {"class": DirectionSelector, "name": "NVVS Light Direction Slector"},
 }
 # "": {"class": , "name": ""},
 
